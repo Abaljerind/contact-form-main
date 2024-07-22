@@ -685,6 +685,10 @@ video {
   content: var(--tw-content);
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -925,6 +929,10 @@ video {
   border-color: rgb(215 60 60 / var(--tw-border-opacity));
 }
 
+.invalid\:outline-redd:invalid {
+  outline-color: #d73c3c;
+}
+
 .hover\:border-green-md:hover {
   --tw-border-opacity: 1;
   border-color: rgb(12 125 104 / var(--tw-border-opacity));
@@ -943,4 +951,8 @@ video {
 .active\:border-green-md:active {
   --tw-border-opacity: 1;
   border-color: rgb(12 125 104 / var(--tw-border-opacity));
+}
+
+.peer:invalid ~ .peer-invalid\:visible {
+  visibility: visible;
 }
