@@ -17,5 +17,129 @@
     <!-- css link -->
     <link rel="stylesheet" href="src/css/output.css" />
   </head>
-  <body></body>
+  <body class="m-0 flex h-full items-center justify-center bg-green-sm">
+    <section
+      class="container my-8 max-w-[340px] rounded-md bg-white font-karla shadow-sm"
+    >
+      <h2 class="mb-10 ml-6 mt-[30px] text-2xl font-bold text-grey-xl">
+        Contact Us
+      </h2>
+      <div class="">
+        <form class="ml-6" id="contactForm">
+          <div class="mb-8 flex flex-col">
+            <label
+              for="firstName"
+              class="mb-[14px] text-base after:ml-2 after:text-green-md after:content-['*']"
+              >First Name</label
+            >
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              required
+              class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none"
+            />
+          </div>
+          <div class="mb-8 flex flex-col">
+            <label
+              for="lastName"
+              class="mb-[14px] text-base after:ml-2 after:text-green-md after:content-['*']"
+              >Last Name</label
+            >
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              required
+              class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none"
+            />
+          </div>
+          <div class="mb-8 flex flex-col">
+            <label
+              for="email"
+              class="mb-[14px] text-base after:ml-2 after:text-green-md after:content-['*']"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none"
+            />
+          </div>
+          <div class="mb-8 flex flex-col">
+            <label
+              for="query-type"
+              class="mb-[22px] text-base after:ml-2 after:text-green-md after:content-['*']"
+              >Query Type</label
+            >
+            <div
+              id="generalEnquiry"
+              class="radio-group flex h-[50px] w-[295px] cursor-pointer items-center rounded-md text-xl"
+            >
+              <input
+                type="radio"
+                name="query-type"
+                id="general"
+                value="general"
+                class="hidden"
+              />
+              <label for="general" class="text-base">General Enquiry</label>
+            </div>
+            <div
+              id="supportRequest"
+              class="radio-group mt-4 flex h-[50px] w-[295px] cursor-pointer items-center rounded-md text-xl"
+            >
+              <input
+                type="radio"
+                name="query-type"
+                id="support"
+                value="support"
+                class="hidden"
+              />
+              <label for="support" class="text-base">Support Request</label>
+            </div>
+          </div>
+          <div class="mb-[45px] flex flex-col">
+            <label
+              for="message"
+              class="mb-[14px] text-base after:ml-2 after:text-green-md after:content-['*']"
+              >Message</label
+            >
+            <input
+              type="text"
+              name="message"
+              id="message"
+              required
+              class="h-60 w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none"
+            />
+          </div>
+          <div class="mr-5 flex flex-col">
+            <div class="mb-[45px] flex flex-wrap items-center">
+              <input
+                type="checkbox"
+                name="agree"
+                id="agree"
+                class="mr-5 h-[18px] w-[18px]"
+              />
+              <label
+                for="message"
+                class="w-[230px] text-base after:ml-2 after:text-green-md after:content-['*']"
+                >I consent to being contacted by the team</label
+              >
+            </div>
+            <div class="mb-6">
+              <button
+                type="submit"
+                class="h-[60px] w-[295px] rounded-md bg-green-md text-center text-base text-white"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

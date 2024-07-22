@@ -16,3 +16,26 @@
     font-style: Bold;
   }
 }
+
+@layer components {
+  /* label for input radio */
+  .radio-group label {
+    @apply relative flex h-[50px] w-[295px] cursor-pointer select-none items-center rounded-md border border-grey-xl bg-inherit pl-14;
+  }
+
+  .radio-group input[type="radio"]:checked + label {
+    @apply border-green-md bg-green-sm;
+  }
+
+  .radio-group label::before {
+    @apply absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 rounded-full border border-grey-md bg-white content-[""];
+  }
+
+  .radio-group input[type="radio"]:checked + label::before {
+    @apply border-2 border-green-md bg-white;
+  }
+
+  .radio-group input[type="radio"]:checked + label::after {
+    @apply absolute left-[25px] top-1/2 h-[10px] w-[10px] -translate-y-1/2 rounded-full bg-green-md content-[""];
+  }
+}
