@@ -782,6 +782,12 @@ video {
   cursor: pointer;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -912,4 +918,14 @@ video {
 .hover\:bg-emerald-950:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(2 44 34 / var(--tw-bg-opacity));
+}
+
+.focus\:border-green-md:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(12 125 104 / var(--tw-border-opacity));
+}
+
+.active\:border-green-md:active {
+  --tw-border-opacity: 1;
+  border-color: rgb(12 125 104 / var(--tw-border-opacity));
 }
