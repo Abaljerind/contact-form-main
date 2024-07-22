@@ -38,8 +38,11 @@
                 name="firstName"
                 id="firstName"
                 required
-                class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none hover:border-green-md focus:border-green-md active:border-green-md"
+                class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none invalid:border-redd hover:border-green-md focus:border-green-md active:border-green-md"
               />
+              <p id="firstNameInvalid" class="mt-2 hidden text-base text-redd">
+                This field is required
+              </p>
             </div>
             <div class="mb-8 flex flex-col">
               <label
@@ -52,8 +55,11 @@
                 name="lastName"
                 id="lastName"
                 required
-                class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none hover:border-green-md focus:border-green-md active:border-green-md"
+                class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none invalid:border-redd hover:border-green-md focus:border-green-md active:border-green-md"
               />
+              <p id="lastNameInvalid" class="mt-2 hidden text-base text-redd">
+                This field is required
+              </p>
             </div>
           </div>
           <div class="mb-8 flex flex-col">
@@ -67,8 +73,11 @@
               name="email"
               id="email"
               required
-              class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none hover:border-green-md focus:border-green-md active:border-green-md"
+              class="h-[50px] w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 text-xl outline-none invalid:border-redd hover:border-green-md focus:border-green-md active:border-green-md"
             />
+            <p id="emailInvalid" class="mt-2 hidden text-base text-redd">
+              Please enter a valid email address
+            </p>
           </div>
           <div class="mb-8 flex flex-col">
             <label
@@ -102,6 +111,9 @@
               />
               <label for="support" class="text-base">Support Request</label>
             </div>
+            <p id="queryTypeInvalid" class="mt-2 hidden text-base text-redd">
+              Please select a query type
+            </p>
           </div>
           <div class="mb-[45px] flex flex-col">
             <label
@@ -114,8 +126,11 @@
               name="message"
               id="message"
               required
-              class="h-60 w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 py-2 text-xl outline-none hover:border-green-md focus:border-green-md active:border-green-md"
+              class="h-60 w-[295px] cursor-pointer rounded-md border border-grey-xl px-3 py-2 text-xl outline-none invalid:border-redd hover:border-green-md focus:border-green-md active:border-green-md"
             ></textarea>
+            <p id="messageInvalid" class="mt-2 hidden text-base text-redd">
+              This field is required
+            </p>
           </div>
           <div class="mr-5 flex flex-col">
             <div class="mb-[45px] flex flex-wrap items-center">
@@ -124,12 +139,16 @@
                 name="agree"
                 id="agree"
                 class="mr-5 h-[18px] w-[18px] accent-green-md"
+                required
               />
               <label
                 for="agree"
                 class="w-[230px] cursor-pointer select-none text-base after:ml-2 after:text-green-md after:content-['*']"
                 >I consent to being contacted by the team</label
               >
+              <p id="agreeInvalid" class="mt-2 hidden text-base text-redd">
+                To submit this form, please consent to being contacted
+              </p>
             </div>
             <div class="mb-6">
               <button
