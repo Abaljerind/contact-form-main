@@ -20,7 +20,7 @@
 @layer components {
   /* label for input radio */
   .radio-group label {
-    @apply relative flex h-[50px] w-[295px] cursor-pointer select-none items-center rounded-md border border-grey-xl bg-inherit pl-14;
+    @apply relative flex h-[50px] w-[295px] cursor-pointer select-none items-center rounded-md border border-grey-xl bg-inherit pl-14 hover:border-green-md;
   }
 
   .radio-group input[type="radio"]:checked + label {

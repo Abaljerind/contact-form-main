@@ -632,6 +632,11 @@ video {
   padding-left: 3.5rem;
 }
 
+.radio-group label:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(12 125 104 / var(--tw-border-opacity));
+}
+
 .radio-group input[type="radio"]:checked + label {
   --tw-border-opacity: 1;
   border-color: rgb(12 125 104 / var(--tw-border-opacity));
@@ -897,4 +902,14 @@ video {
 .after\:content-\[\'\*\'\]::after {
   --tw-content: '*';
   content: var(--tw-content);
+}
+
+.hover\:border-green-md:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(12 125 104 / var(--tw-border-opacity));
+}
+
+.hover\:bg-emerald-950:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 44 34 / var(--tw-bg-opacity));
 }
