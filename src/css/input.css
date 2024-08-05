@@ -39,3 +39,11 @@
     @apply absolute left-[25px] top-1/2 h-[10px] w-[10px] -translate-y-1/2 rounded-full bg-green-md content-[""];
   }
 }
+
+.valid-input {
+  @apply border-grey-xl;
+}
+
+.invalid-input {
+  @apply border-redd;
+}
