@@ -1,9 +1,3 @@
-/* list yang belum selesai: 
-1. error-state [DONE]
-2. desktop-view [DONE]
-3. success-state [DONE]
-*/
-
 document.addEventListener("DOMContentLoaded", function () {
   // declare variable
   const contactForm = document.getElementById("contactForm");
@@ -14,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const supportType = document.getElementById("support");
   const message = document.getElementById("message");
   const agreement = document.getElementById("agree");
-
-  const buttonSubmit = document.querySelector("button[type=submit]");
 
   const invalidFirstName = document.getElementById("firstNameInvalid");
   const invalidLastName = document.getElementById("lastNameInvalid");
@@ -102,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       setTimeout(() => {
         successState.classList.add("hidden");
-        successState.classList.remove("animate-fade-out");
 
         // melakukan submit secara manual setelah modal disembunyikan.
         contactForm.submit();
