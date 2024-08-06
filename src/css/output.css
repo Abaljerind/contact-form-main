@@ -805,6 +805,20 @@ video {
   width: 295px;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
