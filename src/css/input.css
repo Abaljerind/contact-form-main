@@ -20,7 +20,7 @@
 @layer components {
   /* label for input radio */
   .radio-group label {
-    @apply relative flex h-[50px] w-[295px] cursor-pointer select-none items-center rounded-md border border-grey-xl bg-inherit pl-14 hover:border-green-md;
+    @apply relative flex h-[50px] w-[295px] cursor-pointer select-none items-center rounded-md border border-grey-xl bg-inherit pl-14 hover:border-green-md sm:w-[320px];
   }
 
   .radio-group input[type="radio"]:checked + label {
@@ -36,7 +36,7 @@
   }
 
   .radio-group input[type="radio"]:checked + label::after {
-    @apply absolute left-[25px] top-1/2 h-[10px] w-[10px] -translate-y-1/2 rounded-full bg-green-md content-[""];
+    @apply absolute left-6 top-1/2 h-3 w-3 -translate-y-1/2 rounded-full bg-green-md content-[""];
   }
 }
 
