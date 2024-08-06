@@ -44,6 +44,7 @@
               <p
                 id="firstNameInvalid"
                 class="mt-2 hidden text-base text-redd sm:text-lg"
+                aria-live="assertive"
               >
                 This field is required
               </p>
@@ -63,6 +64,7 @@
               <p
                 id="lastNameInvalid"
                 class="mt-2 hidden text-base text-redd sm:text-lg"
+                aria-live="assertive"
               >
                 This field is required
               </p>
@@ -83,6 +85,7 @@
             <p
               id="emailInvalid"
               class="mt-2 hidden text-base text-redd sm:text-lg"
+              aria-live="assertive"
             >
               Please enter a valid email address
             </p>
@@ -97,6 +100,7 @@
               <div
                 id="generalEnquiry"
                 class="radio-group flex h-[50px] w-[295px] cursor-pointer items-center rounded-md text-xl sm:w-[320px]"
+                tabindex="0"
               >
                 <input
                   type="radio"
@@ -104,6 +108,7 @@
                   id="general"
                   value="general"
                   class="hidden"
+                  tabindex="-1"
                 />
                 <label for="general" class="text-base sm:text-lg"
                   >General Enquiry</label
@@ -112,6 +117,7 @@
               <div
                 id="supportRequest"
                 class="radio-group mt-4 flex h-[50px] w-[295px] cursor-pointer items-center rounded-md text-xl sm:mt-0 sm:w-[320px]"
+                tabindex="0"
               >
                 <input
                   type="radio"
@@ -119,6 +125,7 @@
                   id="support"
                   value="support"
                   class="hidden"
+                  tabindex="-1"
                 />
                 <label for="support" class="text-base sm:text-lg"
                   >Support Request</label
@@ -127,6 +134,7 @@
               <p
                 id="queryTypeInvalid"
                 class="mt-2 hidden text-base text-redd sm:-mt-2 sm:text-lg"
+                aria-live="assertive"
               >
                 Please select a query type
               </p>
@@ -147,6 +155,7 @@
             <p
               id="messageInvalid"
               class="mt-2 hidden text-base text-redd sm:text-lg"
+              aria-live="assertive"
             >
               This field is required
             </p>
@@ -169,6 +178,7 @@
               <p
                 id="agreeInvalid"
                 class="mt-2 hidden text-base text-redd sm:text-lg"
+                aria-live="assertive"
               >
                 To submit this form, please consent to being contacted
               </p>
@@ -186,6 +196,7 @@
           <div
             id="success-state"
             class="animate-fade-in fixed top-5 hidden w-[295px] rounded-xl bg-grey-xl p-[18px] sm:left-1/2 sm:h-[108px] sm:w-[450px] sm:-translate-x-1/2"
+            aria-live="polite"
           >
             <div class="flex items-center gap-4">
               <svg
